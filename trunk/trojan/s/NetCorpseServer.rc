@@ -1,0 +1,299 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\NetCorpseServer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\NetCorpseServer.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_NETCORPSESERVER_DIALOG DIALOGEX 0, 0, 516, 319
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "网络僵尸 2007 专业版 Modify by 楚茗"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_TABSTOP,153,4,362,299
+    CONTROL         "全选所有僵尸",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,3,91,67,10
+    CONTROL         "反选所有僵尸",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,75,
+                    91,61,10
+    GROUPBOX        "攻击目标",IDC_STATIC_INFO4,3,113,144,54
+    LTEXT           "IP",IDC_STATIC_IP,25,131,9,8
+    EDITTEXT        IDC_EDIT1,41,127,89,14,ES_AUTOHSCROLL
+    LTEXT           "端口",IDC_STATIC_PORT,17,149,17,8
+    EDITTEXT        IDC_EDIT2,41,145,89,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "开始攻击",IDC_ATTACK,13,173,48,14
+    GROUPBOX        "下载并隐藏运行",IDC_STATIC_INFO5,2,194,145,55
+    LTEXT           "URL",IDC_STATIC_URL,9,211,13,8
+    EDITTEXT        IDC_EDIT3,24,210,118,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "开始",IDC_DOWNLOAD,73,229,70,14
+    PUSHBUTTON      "创建服务器端",IDC_CREATE,73,253,70,17
+    PUSHBUTTON      "监听",IDC_LISTEN,4,278,47,17
+    PUSHBUTTON      "设置",IDC_SET,4,253,47,17
+    PUSHBUTTON      "停止攻击",IDC_ATTACKSTOP,90,173,43,14
+    LTEXT           "",IDC_STATIC_STATUS,0,307,336,12,0,WS_EX_STATICEDGE
+    GROUPBOX        "",IDC_STATIC,0,0,152,303
+    GROUPBOX        "攻击模式",IDC_STATIC,3,9,144,54
+    CONTROL         "新型D.O.S伪造TCP传输DDOS",IDC_RADIO_DOS,"Button",
+                    BS_AUTORADIOBUTTON,18,23,119,12
+    CONTROL         "堵塞服务模式攻击",IDC_RADIO_SELECT,"Button",
+                    BS_AUTORADIOBUTTON,18,43,106,10
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,11,71,120,9
+    LTEXT           "在线数量:0",IDC_STATIC_ONLINE,337,307,178,12,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "弱",IDC_STATIC,2,71,8,9
+    LTEXT           "强",IDC_STATIC,135,71,10,8
+    LTEXT           "",IDC_STATIC_LISTENSTATUS,55,281,93,10
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 95, 67
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "系统设置"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "应用",IDOK,26,52,50,14
+    LTEXT           "端口",IDC_STATIC,6,4,17,8
+    EDITTEXT        IDC_EDIT1,30,1,62,14,ES_AUTOHSCROLL
+    CONTROL         "主机上线时播放声音",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,19,89,10
+    CONTROL         "主机下线时播放声音",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,34,88,10
+END
+
+IDD_DIALOG3 DIALOG DISCARDABLE  0, 0, 179, 77
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "服务端配置"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT1,58,3,118,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,58,22,69,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "生成",IDOK,125,61,50,14
+    LTEXT           "反弹域名或IP:",IDC_STATIC,3,5,53,8
+    LTEXT           "反弹端口:",IDC_STATIC,18,25,36,8
+    LTEXT           "创建服务名:",IDC_STATIC,11,44,44,8
+    EDITTEXT        IDC_EDIT5,58,41,118,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG4 DIALOG DISCARDABLE  0, 0, 300, 146
+STYLE WS_POPUP
+FONT 10, "System"
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,
+                    0,136,300,9
+    CONTROL         140,IDC_STATIC,"Static",SS_BITMAP,0,2,311,143
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "网络僵尸2007前进版\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "NetCorpse\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2007\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "NetCorpse.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "NetCorpse 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 145
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_WAVE1               WAVE    DISCARDABLE     "res\\Global.wav"
+IDR_WAVE2               WAVE    DISCARDABLE     "res\\3.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// UPX
+//
+
+IDR_UPX1                UPX     DISCARDABLE     "res\\upx.exe"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\corpse.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// EXE
+//
+
+IDR_EXE1                EXE     DISCARDABLE     "res\\NetCorpseClient.exe"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_FILEOPT MENU DISCARDABLE 
+BEGIN
+    POPUP "FileOPT"
+    BEGIN
+        MENUITEM "下载到本机",                  ID_MENU_FILEOPT_SAVE
+        MENUITEM "让对方运行该文件",            ID_MENU_FILEOPT_RUN
+        MENUITEM "删除对方文件",                ID_MENU_FILEOPT_DELFILE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 NetCorpseServer(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\NetCorpseServer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
